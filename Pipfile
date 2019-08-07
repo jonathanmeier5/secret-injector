@@ -7,6 +7,8 @@ verify_ssl = true
 pytest = "*"
 
 [packages]
+click = "*"
+pyyaml = "*"
 
 [requires]
 python_version = "3.7"
