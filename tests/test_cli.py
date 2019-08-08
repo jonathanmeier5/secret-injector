@@ -3,6 +3,8 @@ import yaml
 
 from click.testing import CliRunner
 
+from secret_injector.cli import secret_injector_cli
+
 
 @pytest.fixture
 def input_yaml_docker_compose():
