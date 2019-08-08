@@ -9,8 +9,8 @@ COPY Pipfile Pipfile.lock ${SRC_DIR}/
 
 RUN pipenv install --system --dev
 
-COPY ./ ${SRC_DIR}
-
 RUN pip3 install -e .
+
+COPY ./ ${SRC_DIR}
 
 CMD ["pytest", "./tests"]
