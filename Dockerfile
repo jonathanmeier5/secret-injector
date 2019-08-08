@@ -11,4 +11,6 @@ RUN pipenv install --system --dev
 
 COPY ./ ${SRC_DIR}
 
+RUN pip3 install -e .
+
 CMD ["pytest", "./tests"]
