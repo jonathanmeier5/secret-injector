@@ -1,6 +1,6 @@
 import os
 
-DEFAULT_SECRET_DIR=os.path.expanduser('~/.secret-injector')
+from .settings import DEFAULT_SECRET_DIR
 
 
 def retrieve_secrets(project_name: str = None) -> dict:
